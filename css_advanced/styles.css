@@ -1,0 +1,240 @@
+/* General reset */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: Arial, sans-serif;
+  color: #333;
+  line-height: 1.6;
+}
+
+h1,
+h2,
+h3 {
+  font-weight: bold;
+}
+
+a {
+  text-decoration: none;
+  color: inherit;
+}
+
+/* Navbar */
+.navbar {
+  display: flex;
+  justify-content: space-between;
+  padding: 20px 50px;
+  background: transparent;
+  position: absolute;
+  width: 100%;
+  color: #fff;
+}
+
+.nav-links {
+  list-style: none;
+  display: flex;
+  gap: 20px;
+}
+
+.nav-links li a {
+  color: #fff;
+  font-weight: 500;
+}
+
+/* Hero + Pros Section */
+.hero-pros {
+  background: url("images/Object.png") no-repeat center/cover;
+  background-attachment: fixed;
+  /* keeps photo in place */
+  position: relative;
+  color: #fff;
+  text-align: center;
+  padding: 100px 40px;
+}
+
+.hero-pros .overlay {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: rgba(0, 0, 0, 0.6);
+  /* stronger for text readability */
+  z-index: 1;
+}
+
+.hero-content,
+.pros-content {
+  position: relative;
+  z-index: 2;
+}
+
+.hero-content {
+  margin-bottom: 120px;
+  /* spacing before pros */
+}
+
+.hero-content h1 {
+  font-size: 4rem;
+  margin-bottom: 20px;
+}
+
+.hero-content .tags {
+  margin-bottom: 25px;
+  font-weight: 500;
+  letter-spacing: 3px;
+}
+
+.btn-primary {
+  background: #a259ff;
+  color: #fff;
+  border: none;
+  padding: 14px 36px;
+  border-radius: 30px;
+  font-weight: bold;
+  font-size: 1rem;
+  cursor: pointer;
+  transition: 0.3s ease;
+}
+
+.btn-primary:hover {
+  background: #8236d8;
+}
+
+/* Pros inside hero-pros */
+.pros-content h2 {
+  font-size: 2.5rem;
+}
+
+.pros-content .highlight {
+  color: #a259ff;
+}
+
+.pros-cards {
+  display: flex;
+  justify-content: center;
+  gap: 40px;
+  margin-top: 50px;
+  flex-wrap: wrap;
+}
+
+.card {
+  max-width: 220px;
+}
+
+.card img {
+  border-radius: 50%;
+  width: 120px;
+  height: 120px;
+  object-fit: cover;
+  margin-bottom: 15px;
+}
+
+.card h3 {
+  margin-bottom: 10px;
+  font-size: 1.2rem;
+}
+
+.card p {
+  font-size: 0.9rem;
+}
+
+
+/* Testimonial */
+.testimonial {
+  background: #d291ff;
+  padding: 60px 20px;
+  color: #fff;
+}
+
+.testimonial-box {
+  max-width: 800px;
+  margin: auto;
+  display: flex;
+  align-items: center;
+  gap: 20px;
+}
+
+/* Tutorials */
+.tutorials {
+  padding: 60px 40px;
+  text-align: center;
+}
+
+.tutorials .highlight {
+  color: #a259ff;
+}
+
+.tutorial-cards {
+  display: flex;
+  justify-content: space-between;
+  margin-top: 40px;
+  flex-wrap: wrap;
+  gap: 20px;
+}
+
+.tutorial-card {
+  background: #fff;
+  padding: 15px;
+  width: 22%;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+  border-radius: 10px;
+}
+
+/* Membership */
+.membership {
+  background: #0d1b2a;
+  color: #fff;
+  padding: 60px 40px;
+  text-align: center;
+}
+
+.membership-boxes {
+  display: flex;
+  justify-content: space-between;
+  margin: 40px 0;
+}
+
+.box {
+  flex: 1;
+  padding: 20px;
+}
+
+.membership .highlight {
+  color: #a259ff;
+}
+
+/* FAQ */
+.faq {
+  padding: 60px 40px;
+  text-align: center;
+}
+
+.faq-grid {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 40px;
+  margin-top: 40px;
+}
+
+/* Footer */
+.footer {
+  background: #0d1b2a;
+  color: #fff;
+  padding: 40px;
+  text-align: center;
+}
+
+.footer-content {
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 20px;
+}
+
+.socials a {
+  margin: 0 10px;
+  color: #fff;
+}
